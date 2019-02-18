@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" ng-app="app">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exo5</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+  </head>
+  <body>
+    <div ng-controller="myCtrl">
+     <button ng-click="control=true">Afficher</button>
+     <button ng-click="control=false">Masquer</button>
+     <p ng-show="control">Les développeurs Web peuvent travailler dans différents types d'organisations, y compris les grandes sociétés et les gouvernements, les petites et moyennes entreprises, ou en indépendants comme freelances.</p>
+   </div>
+   <script>
+     var app = angular.module('app',[]);
+     app.controller('myCtrl', function($scope){
+       $scope.control = false;
+     });
+   </script>
+  </body>
+</html>

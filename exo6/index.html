@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>exo6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
+  </head>
+  <body>
+    <button ng-click="First=true; Second=false">First</button>
+    <button ng-click="First=false; Second=true">Second</button>
+    <p ng-show="First">Les applications web modernes contiennent souvent trois niveaux ou plus, et en fonction de la taille de l'équipe dans laquelle un développeur travaille, il ou elle peut se spécialiser sur un ou plusieurs de ces niveaux - ou peut jouer un rôle davantage interdisciplinaire. </p>
+    <p ng-show="Second">Par exemple, dans une équipe de deux personnes, un développeur peut se concentrer sur les technologies envoyées au client tels que HTML, JavaScript, CSS. </p>
+    <script>
+      var app = angular.module('app',[]);
+      app.controller('myCtrl', function($scope){
+      });
+    </script>
+  </body>
+</html>
